@@ -1675,7 +1675,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 		end)
 
 		local function sanitizeFileName(str)
-			return string.sub(string.gsub(string.gsub(string.gsub(str, "[^%w _]", ""), " +", " "), " +$", ""), 1, 240)
+			return str
 		end
 
 		if ToSaveInstance then
